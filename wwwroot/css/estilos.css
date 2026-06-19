@@ -1,111 +1,130 @@
+
 body {
-    background: #f4f6f9;
-    font-family: 'Segoe UI', sans-serif;
+    background: #eef2f7;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Banner principal */
+/* Encabezado principal */
 .hero {
-    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
-    padding: 60px;
-    border-radius: 20px;
-    box-shadow: 0px 8px 20px rgba(0,0,0,.2);
+    padding: 70px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
 }
 
-.hero h1{
-    font-size: 55px;
-    font-weight: bold;
+.hero h1 {
+    font-size: 50px;
+    font-weight: 700;
 }
 
-.hero p{
-    font-size: 20px;
+.hero h4 {
+    margin-top: 15px;
+    color: #f1f1f1;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 /* Tarjetas */
-.card{
-    border:none;
-    border-radius:20px;
-    transition: .4s;
+.card {
+    border: none;
+    border-radius: 18px;
+    transition: all .3s ease;
+    overflow: hidden;
 }
 
-.card:hover{
-    transform: translateY(-8px);
-    box-shadow:0px 10px 25px rgba(0,0,0,.2);
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,.15);
 }
 
-.card-body h2{
-    font-size:50px;
+.card-body h2 {
+    font-size: 45px;
 }
 
-.card-body p{
-    color:gray;
+.card-body p {
+    color: #6c757d;
 }
 
-/* Títulos */
-h2{
-    font-weight:bold;
-    color:#0d6efd;
+/* Encabezados */
+h2 {
+    color: #198754;
+    font-weight: 700;
+}
+
+/* Cabeceras de las tarjetas */
+.card-header {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* Tabla */
-.table{
-    border-radius:15px;
-    overflow:hidden;
+.table {
+    overflow: hidden;
+    border-radius: 15px;
 }
 
-.table thead{
-    font-size:18px;
+.table thead {
+    background: #198754;
+    color: white;
 }
 
-/* Botones */
-.btn-warning{
-    font-size:20px;
-    border-radius:30px;
-    padding:12px 30px;
-    font-weight:bold;
+.table tbody tr:hover {
+    background-color: #f3f8f4;
 }
 
-.btn-warning:hover{
-    background:#ffca2c;
-    transform:scale(1.05);
+/* Botón principal */
+.btn-primary {
+    border-radius: 30px;
+    padding: 12px 35px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
 }
 
 /* Sección final */
-.compra-inteligente{
-    background: linear-gradient(135deg,#ffc107,#ffde59);
-    border-radius:20px;
-    padding:40px;
-    box-shadow:0px 8px 20px rgba(0,0,0,.2);
+.consumo-inteligente {
+    background: linear-gradient(135deg, #198754, #20c997);
+    color: white;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
 }
 
-.compra-inteligente h3{
-    font-weight:bold;
+.consumo-inteligente h3 {
+    font-weight: bold;
 }
 
-.card-header{
-    font-size:20px;
-    font-weight:bold;
-}
-
-ul li{
-    padding:10px;
-    font-size:17px;
+/* Lista */
+ul li {
+    margin-bottom: 12px;
+    font-size: 16px;
 }
 
 /* Animación */
-.card,
 .hero,
-.compra-inteligente{
-    animation: aparecer 1s ease;
+.card,
+.consumo-inteligente {
+    animation: fadeUp 0.8s ease-in-out;
 }
 
-@keyframes aparecer{
-    from{
-        opacity:0;
-        transform:translateY(30px);
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
     }
-    to{
-        opacity:1;
-        transform:translateY(0px);
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
+
