@@ -1,0 +1,111 @@
+body {
+    background: #f4f6f9;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Banner principal */
+.hero {
+    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+    color: white;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,.2);
+}
+
+.hero h1{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hero p{
+    font-size: 20px;
+}
+
+/* Tarjetas */
+.card{
+    border:none;
+    border-radius:20px;
+    transition: .4s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow:0px 10px 25px rgba(0,0,0,.2);
+}
+
+.card-body h2{
+    font-size:50px;
+}
+
+.card-body p{
+    color:gray;
+}
+
+/* Títulos */
+h2{
+    font-weight:bold;
+    color:#0d6efd;
+}
+
+/* Tabla */
+.table{
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.table thead{
+    font-size:18px;
+}
+
+/* Botones */
+.btn-warning{
+    font-size:20px;
+    border-radius:30px;
+    padding:12px 30px;
+    font-weight:bold;
+}
+
+.btn-warning:hover{
+    background:#ffca2c;
+    transform:scale(1.05);
+}
+
+/* Sección final */
+.compra-inteligente{
+    background: linear-gradient(135deg,#ffc107,#ffde59);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0px 8px 20px rgba(0,0,0,.2);
+}
+
+.compra-inteligente h3{
+    font-weight:bold;
+}
+
+.card-header{
+    font-size:20px;
+    font-weight:bold;
+}
+
+ul li{
+    padding:10px;
+    font-size:17px;
+}
+
+/* Animación */
+.card,
+.hero,
+.compra-inteligente{
+    animation: aparecer 1s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
